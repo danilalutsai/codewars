@@ -11,21 +11,46 @@
 // input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
 // output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 
-// function openOrSenior(data) {
-//     return data.map(([age, handicap]) => {
-//         return age >= 55 && handicap > 7 ? "Senior" : "Open"
-//     })
-// }
-
 function openOrSenior(data) {
-    const result = []
+    return data.map(([age, handicap]) => {
+        return age >= 55 && handicap > 7 ? "Senior" : "Open"
+    })
+}
 
-    for (const person of data) {
+function openOrSenior1(data) {
+    return data.map((person) => {
         const age = person[0]
         const handicap = person[1]
-    
+
         if (age >= 55 && handicap > 7) {
-            result.push("Senior")
+            return "Senior"
+        } else {
+            return "Open"
+        }
+    })
+}
+
+// function openOrSenior(data) {
+//     const result = []
+//
+//     for (const person of data) {
+//         const age = person[0]
+//         const handicap = person[1]
+//     
+//         if (age >= 55 && handicap > 7) {
+//             result.push("Senior")
+//         } else {
+//             result.push("Open")
+//         }
+//     }
+//     return result
+// }
+
+function openOrSenior(data) { let result = []
+
+    for (let i = 0; i < data.length; i++) {
+        if (data[i][0] >= 55 && data[i][1] > 7) {
+            result.push("Senior") 
         } else {
             result.push("Open")
         }
@@ -33,4 +58,4 @@ function openOrSenior(data) {
     return result
 }
 
-console.log(openOrSenior(data = [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]))
+console.log(openOrSenior1(data = [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]))
