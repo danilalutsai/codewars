@@ -9,13 +9,12 @@
 // "a234"   -->  false
 
 function validatePIN(pin) {
-    for (const num of pin) {
-        if (typeof Number(num) !== "number" || isNaN(Number(num)))
-            return false
-    }
-    return pin.length === 4 || pin.length === 6 ? true : false
-
+    // for (const num of pin) {
+    //     if (typeof Number(num) !== "number" || isNaN(Number(num)))
+    //         return false
+    // }
     // return pin.length === 4 || pin.length === 6 ? true : false
+    return /^(\d{4}|\d{6})$/.test(pin)
 }
 
 console.log(validatePIN("1234"))
