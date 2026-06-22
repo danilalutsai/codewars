@@ -13,8 +13,23 @@
 // Note: keep the original order of the names in the output.
 
 
+// function friend(friends) {
+//     return friends.filter(function lengthOfEach(name) {
+//         return name.length === 4
+//     })
+// }
+
 function friend(friends) {
-    return friends.filter((name) => name.length === 4)
+    const result = []
+
+    for (let i = 0; i < friends.length; i++) {
+        const name = friends[i]
+
+        if (name.length === 4) {
+            result.push(name)
+        }
+    }
+    return result
 }
 
 console.log(friend(["Ryan", "Kieran", "Jason", "Yous"]))
