@@ -6,7 +6,6 @@ function findAverage(array) {
   if (array === 0 || array.length === 0) {
     return 0
   } 
-  return array.reduce((arr, number) => arr + number) / array.length
+  return array.reduce((arr, number) => arr + number, 0) / array.length
 }
-
 console.log(findAverage([1, 2, 3]))
