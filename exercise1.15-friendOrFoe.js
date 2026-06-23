@@ -8,7 +8,7 @@
 // Output = ["Ryan", "Yous"]
 //
 // Input = ["Peter", "Stephen", "Joe"]
-// Output = []
+// Output = ]
 // Input strings will only contain letters.
 // Note: keep the original order of the names in the output.
 
