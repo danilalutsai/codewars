@@ -21,9 +21,13 @@
 //
 //   for (const smile of array) {
 //     if (smile.length === 2) {
-//       if ((":;").includes(smile[0]) && (")D").includes(smile[1])) count++
+//       if 
+//       ((":;").includes(smile[0]) && 
+//       (")D").includes(smile[1])) count++
 //     } else if (smile.length === 3) {
-//       if ((":;").includes(smile[0]) && ("-~").includes(smile[1]) && (")D").includes(smile[2])) count++
+//       if ((":;").includes(smile[0]) && 
+//         ("-~").includes(smile[1]) && 
+//         (")D").includes(smile[2])) count++
 //     } 
 //   }
 //   return count
