@@ -16,8 +16,7 @@ function generateHashtag(string) {
   const array = string.split(" ").filter(n => n)
   if (!array.length) return false
   const hashtag = "#" + 
-    array.map(word => word[0].toUpperCase() + 
-      word.slice(1, word.length)).join("")
+    array.map(word => word[0].toUpperCase() + word.slice(1, word.length)).join("")
   return hashtag.length > 140 ? false : hashtag
 }
 
