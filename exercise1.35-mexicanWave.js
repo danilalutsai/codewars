@@ -17,9 +17,10 @@
 function wave(string) {
   const result = []
   for (let i = 0; i < string.length; i++) {
+    if (string.slice(0, i) === ' ') continue
       result.push(string.slice(0, i) + string[i].toUpperCase() + string.slice(i + 1))
   }
   return console.log(result)
 }
 
-wave(" s p a c e s ")
+wave(" hello")

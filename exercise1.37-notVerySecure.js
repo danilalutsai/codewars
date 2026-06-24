@@ -9,7 +9,7 @@
 // No whitespaces / underscore
 
 function alphanumeric(string) {
-  return /[A-z0-9]!/.test(string)
+  return /^[a-zA-Z0-9]+$/.test(string)
 }
 
 console.log(alphanumeric("hel Ls921o"))
