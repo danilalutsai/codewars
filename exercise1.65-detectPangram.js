@@ -6,8 +6,6 @@ function isPangram(string) {
       letters.add(char);
     }
   }
-  console.log(typeof letters)
-  console.log(letters)
   return letters.size === 26;
 }
 
