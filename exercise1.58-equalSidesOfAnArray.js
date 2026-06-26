@@ -8,7 +8,7 @@ function findEvenIndex(array) {
     // console.log(leftSum)
 
     if (rightSum === leftSum) 
-      return i 
+      return array[i]
 
     leftSum += array[i]
   }
