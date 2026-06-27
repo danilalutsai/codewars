@@ -13,4 +13,4 @@ function findMissingLetter(array) {
   return false;
 }
 
-console.log(findMissingLetter(["a", "b", "c", "e"]))
+console.log(findMissingLetter(["a", "b", "c", "e"]));
